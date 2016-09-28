@@ -6,11 +6,11 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>calculoIMC</name>
-    <description>Hello World sample application that responds to the deviceready event.</description>
-    <author email="support@phonegap.com" href="http://phonegap.com">PhoneGap Team</author>
+    <name>DCDM Apps Menu</name>
+    <description>Some kind of portfolio of all the apps we did in DCDM.</description>
+    <author email="support@phonegap.com" href="http://phonegap.com">Marisa Bernardo through PhoneGap</author>
     <content src="index.html" />
-    <icon src="icon.png" />
+    <icon src="icon128x128.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -20,4 +20,6 @@
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="orientation" value="screen-portrait" />
+    <preference name="SplashScreenDelay" value="3000" />
 </widget>

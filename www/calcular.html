@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/calcular.css" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="app">
+        <img src="img/calculator.png">
+        <h2>Senhora Dona</h2>
+        <h1>Calculadora</h1>
+        <br>
+        <form name="calculador">
+            <input id="box" type="text" name="visor"><br><br>
+            <div id="linha">
+                <input id="button" type="button" value=" 1 " name="um" onclick="calculador.visor.value += '1'">
+                <input id="button"type="button" value=" 2 " name="dois" onclick="calculador.visor.value += '2'">
+                <input id="button"type="button" value=" 3 " name="tres" onclick="calculador.visor.value += '3'">
+                <input id="button"type="button" value=" + " name="mais" onclick="calculador.visor.value += '+'">
+            </div>
+            <div id="linha">
+                <input id="button"type="button" value=" 4 " name="quatro" onclick="calculador.visor.value += '4'">
+                <input id="button"type="button" value=" 5 " name="cinco" onclick="calculador.visor.value += '5'">
+                <input id="button"type="button" value=" 6 " name="seis" onclick="calculador.visor.value += '6'">
+                <input id="button"type="button" value=" - " name="menos" onclick="calculador.visor.value += '-'">
+            </div>
+            <div id="linha">
+                <input id="button"type="button" value=" 7 " name="sete" onclick="calculador.visor.value += '7'">
+                <input id="button"type="button" value=" 8 " name="oito" onclick="calculador.visor.value += '8'">
+                <input id="button"type="button" value=" 9 " name="nove" onclick="calculador.visor.value += '9'">
+                <input id="button"type="button" value=" * " name="vezes" onclick="calculador.visor.value += '*'">
+            </div>
+            <div id="linha">
+                <input id="button"type="button" value=" C " name="clear" onclick="calculador.visor.value = ''">
+                <input id="button"type="button" value=" 0 " name="zero" onclick="calculador.visor.value += '0'">
+                <input id="button"type="button" value=" = " name="igual" onclick="calculador.visor.value=eval(calculador.visor.value)" >
+                <input id="button"type="button" value=" / " name="dividir" onclick="calculador.visor.value += '/'">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/calcular.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
